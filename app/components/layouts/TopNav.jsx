@@ -248,7 +248,7 @@ export default function TopNav() {
                     <Button variant="text" size="sm" color="blue-gray">
                         Profile
                     </Button>
-                    <Link href='/login'>
+                    <Link href='/pages/login'>
                         <Button variant="gradient" size="sm">
                             Login
                         </Button>
@@ -273,7 +273,7 @@ export default function TopNav() {
                     <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
                         Profile
                     </Button>
-                    <Link href='/login'>
+                    <Link href='/pages/login'>
                         <Button variant="gradient" size="sm" fullWidth>
                             Login
                         </Button>
