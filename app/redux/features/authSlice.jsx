@@ -1,9 +1,9 @@
-'use client';
+
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    user: localStorage.getItem("user") ? localStorage.getItem("user") : null,
-    isLoggedIn: localStorage.getItem("user") ? true : false,
+    user: null,
+    isLoggedIn: false,
 };
 
 export const authSlice = createSlice({
@@ -12,13 +12,11 @@ export const authSlice = createSlice({
     reducers: {
         login: (state, action) => {
             state.user = action.payload;
-            isLoggedIn: true;
-            localStorage.setItem("user", JSON.stringify(state.user));
+            state.isLoggedIn = true;
         },
         logout: (state) => {
             state.user = null;
-            isLoggedIn: false;
-            localStorage.removeItem("user");
+            state.isLoggedIn = false;
         },
     }
 });
