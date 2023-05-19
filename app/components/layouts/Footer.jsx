@@ -53,7 +53,7 @@ export default function Footer() {
                 </ul>
             </div>
             <hr className="my-8 border-blue-gray-50" />
-            <Typography color="blue-gray" className="text-center font-normal">
+            <Typography color="blue-gray" className="text-center font-normal uppercase">
                 &copy; {currentYear} Sanu Islam
             </Typography>
         </footer>
