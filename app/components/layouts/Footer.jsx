@@ -1,5 +1,6 @@
 'use client';
 import { Typography } from "@material-tailwind/react";
+import Image from "next/image";
 
 export default function Footer() {
     const date = new Date();
@@ -8,12 +9,15 @@ export default function Footer() {
     return (
         <footer className="w-full bg-white p-8">
             <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1ViUJUKb80D_L0eMpcVQj6WOZt6Q_9-Lwg&usqp=CAU" alt="logo-ct" className="w-10" />
+                <Image
+                    width={1000}
+                    height={1000}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1ViUJUKb80D_L0eMpcVQj6WOZt6Q_9-Lwg&usqp=CAU" alt="logo-ct" className="w-10" />
                 <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
                     <li>
                         <Typography
                             as="a"
-                            href="#"
+                            href="/"
                             color="blue-gray"
                             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
                         >
@@ -23,7 +27,7 @@ export default function Footer() {
                     <li>
                         <Typography
                             as="a"
-                            href="#"
+                            href="/"
                             color="blue-gray"
                             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
                         >
@@ -33,17 +37,17 @@ export default function Footer() {
                     <li>
                         <Typography
                             as="a"
-                            href="#"
+                            href="/pages/about"
                             color="blue-gray"
                             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
                         >
-                            Contribute
+                            About
                         </Typography>
                     </li>
                     <li>
                         <Typography
                             as="a"
-                            href="#"
+                            href="/pages/contact"
                             color="blue-gray"
                             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
                         >
@@ -54,7 +58,7 @@ export default function Footer() {
             </div>
             <hr className="my-8 border-blue-gray-50" />
             <Typography color="blue-gray" className="text-center font-normal uppercase">
-                &copy; {currentYear} Sanu Islam
+                <span className="ring-2 rounded-full p-1">c</span> {currentYear} Sanu Islam
             </Typography>
         </footer>
     );

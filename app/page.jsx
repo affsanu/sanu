@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { StarIcon } from "@heroicons/react/24/solid";
 import Typewriter from 'typewriter-effect';
+import Image from "next/image";
 
 const users = [
   {
@@ -109,7 +110,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <img
+        <Image
+        width={1000}
+        height={1000}
           src="https://scontent.fdac157-1.fna.fbcdn.net/v/t39.30808-6/319531369_2432248900263653_5012719144125956361_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHt_3_rXq-AajnRv3jRNwfFp6vgdCVhCXinq-B0JWEJeDlReSteMVgBn4Gj-fieDznYcoUhNc52swW4dzEeQJ10&_nc_ohc=5C4ejzjbxlsAX-u39lJ&_nc_ht=scontent.fdac157-1.fna&oh=00_AfBjl4lGJcUrwdQa64UCfY-huDLjTQzlrHLTpOqRDLd6mQ&oe=646CCBD8"
           alt="team work"
           className="lg:0 mb-8 h-96 w-full rounded-xl object-cover lg:h-[40rem] lg:w-1/2"

@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Sanu Islam',
-  description: 'Personal Portfolio',
+  description: 'Personal Portfolio of Sanu Islam',
+  keywords: "sanu, Sanu Islam, Saidpur, Md Sanu, Md Sanu Islam, Saidpur News, Syedpur News, Saidpur Plaza, News Saidpur",
 }
 
 export default function RootLayout({ children }) {

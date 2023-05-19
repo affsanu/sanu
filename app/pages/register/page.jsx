@@ -63,7 +63,7 @@ export default function Register() {
             Sign Up
           </Button>
           <Typography variant="small" className="mt-6 flex justify-center">
-            Don't have an account?
+            Already have an account?
             <Link href="/pages/login"
               className="ml-1 font-bold text-blue-600"
             >
