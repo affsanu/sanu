@@ -9,7 +9,7 @@ export async function POST(req) {
 
     const { email, password } = await req.json();
     if (!email || !password) {
-        return new Response(JSON.stringify({error: "Invalid credential!"}), { status: 404 });
+        return new Response(JSON.stringify({error: "All field must be filled!"}), { status: 404 });
     }
     const user = await User.findOne({ email });
     if (!user) {
